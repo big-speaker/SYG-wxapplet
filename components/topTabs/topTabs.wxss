@@ -1,0 +1,12 @@
+.tab_title{
+  display:flex;
+}
+.tab_title view{
+  flex:1;
+  text-align:center;
+  height:50rpx;
+}
+.active{
+  color:#007FFF;
+  border-bottom:solid;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "searchInput":"../../components/searchInput/searchInput"
+  },
+  "backgroundTextStyle":"light",
+  "navigationBarTitleText": "尚优购"
+}

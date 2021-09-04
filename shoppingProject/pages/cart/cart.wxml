@@ -1,0 +1,58 @@
+<view>
+  <button wx:if="{{!address.userName}}" bindtap="getAddress" >添加收货地址</button>
+  <view wx:else class="addressBox">
+    <view class="addressData">
+      <view>
+        收货人:{{address.userName}}
+      </view>
+      <view>
+        {{address.provinceName+address.cityName+address.countyName+address.detailInfo}}
+      </view>
+    </view>
+    <view class="userNumber">
+      {{address.telNumber}}
+    </view>
+  </view>
+</view>
+<view class="title">购物车</view>
+<block wx:if="{{cart.length!==0}}">
+  <view class="goodsData" wx:for="{{cart}}" wx:for-index="index" wx:for-item="item" wx:key="goods_id" >
+    <view class="checkBox">
+      <checkbox-group data-id="{{item.goods_id}}" bindchange="changeCheck">
+        <checkbox checked="{{item.check}}"></checkbox>
+      </checkbox-group>
+    </view>
+    <view class="imageBox">
+      <image mode="widthFix" src="{{item.pics[0].pics_mid}}"></image>
+    </view>
+    <view class="goodsDetailBox">
+      <view class="goodsDetail">{{item.goods_name}}</view>
+      <view class="goodsData">
+        <view class="goodsPrice">￥{{item.goods_price}}</view>
+        <view class="number">
+          <view class="numberButton" bindtap="editNum"data-id="{{item.goods_id}}" data-operation="{{-1}}">-</view>
+          <view class="goodsNumber">{{item.num}}</view>
+          <view class="numberButton" bindtap="editNum" data-id="{{item.goods_id}}" data-operation="{{1}}">+</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <image mode="widthFix" src="https://img0.baidu.com/it/u=3334466282,826560232&fm=26&fmt=auto&gp=0.jpg"></image>
+  <view class="alertContent">购物车空空如也~</view>
+</block>
+
+<view class="bottomBox">
+  <checkbox-group class="checkBox" bindchange="changeallCheck">
+  <checkbox check="{{allcheck}}">全选</checkbox>
+  </checkbox-group>
+  <view class="numberCost">
+    <view class="costLeft">合计:</view>
+    <view class="costRight">
+      <view class="costContent">￥{{totalPrice}}</view>
+      <view class="costLabel">包含运费</view>
+    </view>
+  </view>
+  <view class="settleButton" bindtap="settleWay">结算({{totalNum}})</view>
+</view>

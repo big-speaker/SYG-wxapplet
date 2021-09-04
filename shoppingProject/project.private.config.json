@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "分类页面",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goods_list/goods_list",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "cat_id=5",
+          "scene": null
+        },
+        {
+          "name": "pages/goods_detail/goods_detail",
+          "pathName": "pages/goods_detail/goods_detail",
+          "query": "goods_id=43986",
+          "scene": null
+        },
+        {
+          "name": "pages/cart/cart",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "支付页面",
+          "pathName": "pages/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登陆页面",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "搜索中心",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

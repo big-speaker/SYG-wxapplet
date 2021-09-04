@@ -1,0 +1,15 @@
+<view class="searchBox">
+  <input type="text" focus="true" bindinput="searchGoods"></input>
+  <button>取消</button>
+</view>
+<view class="searchContent">
+  <view class="searchItem">
+    asdhakjdhasljdhasdjkhjskaldhjklasdhajklsdhAJKSDHLJKASDHLAJKSDHAS
+  </view>
+  <view class="searchItem">
+    asdhakjdhasljdhasdjkhjskaldhjklasdhajklsdhAJKSDHLJKASDHLAJKSDHAS
+  </view>
+  <view class="searchItem">
+    asdhakjdhasljdhasdjkhjskaldhjklasdhajklsdhAJKSDHLJKASDHLAJKSDHAS
+  </view>
+</view>
